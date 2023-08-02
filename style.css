@@ -10,13 +10,7 @@
     cursor: pointer;
 }
 
-/* Estilo para el cuadro de comentarios (inicialmente oculto) */
-#comentarios-disqus {
-    display: none;
-    padding: 10px;
-    background-color: #cce0ff;
-    border: 1px solid #000;
-    border-radius: 5px;
+
 }
 /* Estilo para el contenedor principal */
 body{
