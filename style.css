@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Estilo para el botón de comentarios */
+.btn-comentarios {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para el cuadro de comentarios (inicialmente oculto) */
+#comentarios-disqus {
+    display: none;
+    padding: 10px;
+    background-color: #cce0ff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+/* Estilo para el contenedor principal 
 body{
     font-family: 'Bebas Neue', sans-serif;
     background-color:#112236;
