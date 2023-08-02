@@ -404,6 +404,8 @@
 
 
 
+
+
 <button id="btnComentarios" class="btn-comentarios">Comentarios</button>
 
 <!-- Contenedor para los comentarios de Disqus -->
@@ -419,7 +421,7 @@
     // Verifica si los comentarios de Disqus ya están cargados
     if (typeof DISQUS !== "undefined") {
       DISQUS.reset({ reload: true, config: function () {
-        this.page.url = https://fug21.github.io/;
+        this.page.url = PAGE_URL;
         this.page.identifier = PAGE_IDENTIFIER;
       }});
     } else {
@@ -438,3 +440,4 @@
 
 </body>
 </html>
+
