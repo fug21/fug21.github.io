@@ -398,12 +398,43 @@
     </ul>
     
 </footer>
+
     
+    
+
+
 
 <button id="btnComentarios" class="btn-comentarios">Comentarios</button>
-    
 
+<!-- Contenedor para los comentarios de Disqus -->
+<div id="comentarios-disqus"></div>
 
+<script>
+  // Función para cargar los comentarios de Disqus
+  function cargarComentariosDisqus() {
+    // Cambia el valor de PAGE_URL y PAGE_IDENTIFIER con los valores adecuados para tu página
+    var PAGE_URL = "https://fug21.github.io/"; // URL de tu página
+    var PAGE_IDENTIFIER = "pagina-unico-identificador"; // Identificador único para tu página
+
+    // Verifica si los comentarios de Disqus ya están cargados
+    if (typeof DISQUS !== "undefined") {
+      DISQUS.reset({ reload: true, config: function () {
+        this.page.url = PAGE_URL;
+        this.page.identifier = PAGE_IDENTIFIER;
+      }});
+    } else {
+      // Carga los comentarios de Disqus
+      var d = document, s = d.createElement('script');
+      s.src = 'https://cuevana3-10.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+
+  // Agregar un evento al botón para que ejecute la función al hacer clic
+  const btnComentarios = document.getElementById("btnComentarios");
+  btnComentarios.addEventListener("click", cargarComentariosDisqus);
+</script>
 
 </body>
 </html>
