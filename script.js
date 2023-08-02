@@ -17,7 +17,7 @@ function cargarComentariosDisqus() {
   if (typeof DISQUS !== "undefined") {
     DISQUS.reset({ reload: true, config: function () {
       this.page.url ="https://fug21.github.io/";
-      this.page.identifier = PAGE_IDENTIFIER;
+      this.page.identifier = "cuevana3.10";
     }});
   } else {
     var d = document, s = d.createElement('script');
