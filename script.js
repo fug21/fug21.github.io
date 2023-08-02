@@ -12,7 +12,7 @@ function toggleComentarios() {
 // Función para cargar los comentarios de Disqus
 function cargarComentariosDisqus() {
   var PAGE_URL = "https://fug21.github.io/"; // URL de tu página
-  var PAGE_IDENTIFIER = "pagina-unico-identificador"; // Identificador único para tu página
+  var PAGE_IDENTIFIER = "cuevana3.10"; // Identificador único para tu página
 
   if (typeof DISQUS !== "undefined") {
     DISQUS.reset({ reload: true, config: function () {
